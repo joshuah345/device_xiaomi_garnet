@@ -19,8 +19,7 @@ persist.vendor.data.mode=concurrent
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 persist.vendor.vonr_setting_support=1
-
-# ScreenFlickerFix
+persist.rcs.supported=1
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=80
 vendor.display.idle_time=0
