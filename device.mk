@@ -288,6 +288,7 @@ PRODUCT_PACKAGES += \
     init.garnet.perf.sh \
     init.qcom.rc \
     init.recovery.qcom.rc \
+    init.qcom.power.rc \
     init.target.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
