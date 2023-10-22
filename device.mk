@@ -270,6 +270,7 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
     init.garnet.rc \
+    init.garnet.perf.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
