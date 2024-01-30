@@ -964,19 +964,32 @@
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 
-    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
-         will be used. -->
-         <integer name="config_burnInProtectionMaxRadius">70</integer>
+    <!-- Expected value from fast charging status file  -->
+    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
 
-         <!-- Specifies the minimum burn-in offset horizontally. -->
-         <integer name="config_burnInProtectionMinHorizontalOffset">-15</integer>
-     
-         <!-- Specifies the maximum burn-in offset horizontally. -->
-         <integer name="config_burnInProtectionMaxHorizontalOffset">15</integer>
-     
-         <!-- Specifies the minimum burn-in offset vertically. -->
-         <integer name="config_burnInProtectionMinVerticalOffset">-40</integer>
-     
-         <!-- Specifies the maximum burn-in offset vertically. -->
-         <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
-     </resources>
+    <!-- Power Menu Reboot -->
+    <string-array translatable="false" name="config_rebootActionsList">
+        <item>restart</item>
+        <item>reboot_recovery</item>
+        <item>reboot_bootloader</item>
+        <item>reboot_fastboot</item>
+    </string-array>
+
+    <!-- Whether doze feature is enabled by default in settings -->
+    <bool name="config_doze_enabled_by_default">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">0dp</dimen>
+
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">0dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">0dp</dimen>
+
+    <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
+    <dimen name="config_viewMaxFlingVelocity">12000dp</dimen>
+</resources>
