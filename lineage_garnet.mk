@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from garnet device
@@ -16,6 +16,8 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 
 # Inherit from the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
+
+TARGET_BUILD_APERTURE_CAMERA := false
 
 PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
