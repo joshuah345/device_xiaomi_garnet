@@ -599,3 +599,9 @@ PRODUCT_BOOT_JARS += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+
