@@ -502,6 +502,7 @@ service vendor.sniffer.circular /vendor/bin/tcpdump -i wlan0 -W 3 -C 300 -w /dat
     oneshot
 
 on property:sys.boot_completed=1
+    stop statsd
     enable vendor.qvirtmgr
     start  vendor.qvirtmgr
 
