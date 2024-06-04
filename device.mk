@@ -271,6 +271,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.garnet.rc \
     init.garnet.perf.rc \
+    init.garnet.perf.sh \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \

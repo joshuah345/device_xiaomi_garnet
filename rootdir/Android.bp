@@ -59,3 +59,9 @@ prebuilt_etc {
     sub_dir: "init",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.garnet.perf.sh",
+    src: "bin/init.garnet.perf.sh",
+    vendor: true,
+}
