@@ -128,4 +128,7 @@ void vendor_load_properties() {
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
     }
+
+    property_override("ro.rising.maintainer", "hiroshi. (Superuser)");
+    property_override("ro.rising.chipset", "Snapdragon 7s Gen 2");
 }
