@@ -38,6 +38,7 @@ public class ThermalService extends Service {
 
     private boolean mScreenOn = true;
     private String mCurrentApp = "";
+     private String mPreviousApp;
     private ThermalUtils mThermalUtils;
 
     private IActivityTaskManager mActivityTaskManager;
