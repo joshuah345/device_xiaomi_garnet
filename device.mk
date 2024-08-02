@@ -578,9 +578,8 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi
-
-PRODUCT_COPY_FILES += \
-    hardware/xiaomi/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+    
+$(call inherit-product vibrator/vibrator-vendor-product.mk)
 
 # VNDK
 PRODUCT_COPY_FILES += \
