@@ -12,4 +12,8 @@
 
     <!-- FPS Info Service FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+    <!-- Whether to enable shifting of elements in the status bar and the navigation bar.
+         Should be enabled for OLED devices to reduce/prevent burn in on the status bar
+         and on the navigation bar and disabled for all other devices. -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 </resources>
