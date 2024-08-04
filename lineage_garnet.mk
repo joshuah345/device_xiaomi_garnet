@@ -17,11 +17,22 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 # Inherit from the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
 
+# ViPER4Android (if exists)
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+
+# rising specific
 ifeq ($(strip $(WITH_GMS)),true)
     $(call inherit-product, vendor/bcr/bcr.mk)
     TARGET_DEFAULT_PIXEL_LAUNCHER := true
 endif
 
+# Enable PIF by default
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.pixelprops.gms=true
+
+# Include Lawnchair A14
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+# -------
 
 TARGET_BUILD_APERTURE_CAMERA := false
 
