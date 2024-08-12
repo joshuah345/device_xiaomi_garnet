@@ -34,4 +34,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 
 # Additional makefile options
-$(call inherit-product-if-exists extras.mk)
+$(call inherit-product-if-exists, device/xiaomi/garnet/extras.mk)

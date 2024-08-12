@@ -15,3 +15,22 @@ ifeq ($(strip $(WITH_GMS)),true)
 	# rising specific
     TARGET_DEFAULT_PIXEL_LAUNCHER := true
 endif
+
+# Include Lawnchair 14 (rising)
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+# -------
+
+ifeq ($(strip $(TARGET_USES_DOLBY)),true)
+ifeq ($(strip $(TARGET_DOLBY_VENDOR)),)
+  $(warning TARGET_USES_DOLBY is set to true but no type was set. Defaulting to XiaomiDolby...)
+  PRODUCT_PACKAGES += \
+    XiaomiDolby
+else 
+ifeq ($(strip $(TARGET_DOLBY_VENDOR)), MOTO)
+    $(call inherit-product, vendor/dolby_moto/dolby.mk)
+endif
+endif
+endif
+
+TARGET_USES_DOLBY := true
+TARGET_DOLBY_VENDOR := MOTO
