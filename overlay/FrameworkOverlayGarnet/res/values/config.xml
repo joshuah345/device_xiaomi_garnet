@@ -1036,4 +1036,20 @@
 
     <!-- the padding on the end of the statusbar -->
     <dimen name="status_bar_padding_end">0dp</dimen>
-</resources>
+
+    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
+         will be used. -->
+         <integer name="config_burnInProtectionMaxRadius">70</integer>
+
+         <!-- Specifies the minimum burn-in offset horizontally. -->
+         <integer name="config_burnInProtectionMinHorizontalOffset">-15</integer>
+     
+         <!-- Specifies the maximum burn-in offset horizontally. -->
+         <integer name="config_burnInProtectionMaxHorizontalOffset">15</integer>
+     
+         <!-- Specifies the minimum burn-in offset vertically. -->
+         <integer name="config_burnInProtectionMinVerticalOffset">-40</integer>
+     
+         <!-- Specifies the maximum burn-in offset vertically. -->
+         <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
+     </resources>
