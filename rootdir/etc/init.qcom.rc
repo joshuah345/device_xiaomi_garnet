@@ -712,11 +712,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     user root
     group root system radio
     oneshot
-# Remove since is deprecated but throws AVC denial.
-# service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
@@ -995,6 +990,7 @@ on property:sys.boot_completed=1 && property:ro.product.debugfs_restrictions.ena
 
 on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.debuggable="1"
    mount debugfs debugfs /sys/kernel/debug
+   chown system system /sys/kernel/debug
    chmod 0755 /sys/kernel/debug
 
     # cooling device used to set 4Rx or 2Rx
