@@ -10,9 +10,6 @@
     <!-- Whether show refresh rate QS tile -->
     <bool name="config_showRefreshRateQsTile">true</bool>
 
-    <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">6dp</dimen>
-
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
 
@@ -63,10 +60,4 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
-
-    <!-- Whether to enable shifting of elements in the status bar and the navigation bar.
-    Should be enabled for OLED devices to reduce/prevent burn in on the status bar
-    and on the navigation bar and disabled for all other devices. -->
-    <bool name="config_statusBarBurnInProtection">true</bool>
-
 </resources>
