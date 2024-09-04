@@ -1028,15 +1028,6 @@
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
 
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">0dp</dimen>
-
-    <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">0dp</dimen>
-
-    <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">0dp</dimen>
-
     <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
          will be used. -->
          <integer name="config_burnInProtectionMaxRadius">70</integer>
