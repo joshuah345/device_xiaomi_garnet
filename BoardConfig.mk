@@ -122,14 +122,14 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # Kernel (prebuilt)
-KERNEL_PATH := $(DEVICE_PATH)-kernel
+KERNEL_PATH := $(DEVICE_PATH)-prebuilt
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/images/dtbs/
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/images/dtbo.img
 
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 PRODUCT_COPY_FILES += \
-	$(KERNEL_PATH)/images/kernel:kernel
+	$(KERNEL_PATH)/images/villhaze/1.10/kernel-ksu:kernel
 
 # Kernel modules
 DLKM_MODULES_PATH := $(KERNEL_PATH)/modules/dlkm
