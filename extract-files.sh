@@ -80,6 +80,9 @@ function blob_fixup() {
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
             ;;
+        vendor/lib64/vendor.libdpmframework.so)
+            "${PATCHELF_0_17_2}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
     esac
 }
 
