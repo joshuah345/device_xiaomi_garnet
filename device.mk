@@ -414,6 +414,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Platform
+TARGET_BOARD_PLATFORM := parrot
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
