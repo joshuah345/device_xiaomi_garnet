@@ -122,14 +122,14 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # Kernel (prebuilt)
-PREBUILT_PATH := device/xiaomi/garnet-prebuilt
+PREBUILT_PATH := device/xiaomi/garnet-kernel
 BOARD_PREBUILT_DTBIMAGE_DIR := $(PREBUILT_PATH)/images/dtbs/
 BOARD_PREBUILT_DTBOIMAGE := $(PREBUILT_PATH)/images/dtbo.img
 
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := $(PREBUILT_PATH)/kernel-headers
 PRODUCT_COPY_FILES += \
-	$(PREBUILT_PATH)/images/kernel:kernel
+	$(PREBUILT_PATH)/images/GKI/ksu/5.10.210/kernel:kernel
 
 # Kernel modules
 DLKM_MODULES_PATH := $(PREBUILT_PATH)/modules/dlkm
